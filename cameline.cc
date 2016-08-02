@@ -19,7 +19,7 @@ int main( int argc, char** argv )
   Mat gray_img; //グレースケール画像の変数
   Mat bin_img; //二値化画像の変数
   cvtColor(color_img, gray_img, CV_RGB2GRAY); //グレースケール化
-  threshold(gray_img, bin_img, 100, 255, THRESH_BINARY); //二値化（今回は関係なし）
+  // threshold(gray_img, bin_img, 100, 255, THRESH_BINARY); //二値化（今回は関係なし）
   GaussianBlur(gray_img, gray_img, Size(17,17), 2, 2); //ガウシアンフィルタでノイズの除去
   Canny(gray_img, gray_img, 10, 20, 3); //エッジ検出
   //imshow("y", gray_img);
