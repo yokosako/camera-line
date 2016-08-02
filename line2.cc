@@ -9,13 +9,12 @@ using namespace std;
 int main( int argc, char** argv )
 {
   VideoCapture cap(0);
-  for(int i=0;;i++)
+  for(int i=0;i<=247;i++)
     {
-      Mat color_img;
-      cap >> color_img;
-      // char fname[1024];
-      // sprintf(fname, "/media/ykzk/ボリューム/rc/rc2015_log/tumsat_pool3/dimg%05d.jpg", i);
-      // Mat color_img = imread(fname); //画像読み込み
+      // Mat color_img;
+      char fname[1024];
+      sprintf(fname, "/media/ykzk/ボリューム/rc/rc2015_log/tumsat_pool3/dimg%05d.jpg", i);
+      Mat color_img = imread(fname); //画像読み込み
   Mat gray_img; //グレースケール画像の変数
   Mat bin_img; //二値化画像の変数
   cvtColor(color_img, gray_img, CV_RGB2GRAY); //グレースケール化
