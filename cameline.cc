@@ -10,7 +10,7 @@ int main( int argc, char** argv )
 {
   VideoCapture cap(0);
   for(int i=0;;i++)
-    {
+   {
       Mat color_img;
       cap >> color_img;
       // char fname[1024];
@@ -37,6 +37,6 @@ int main( int argc, char** argv )
     //imshow( "エッジ検出", gray_img );
     imshow( "ライン検出", color_img );    
   waitKey(50);
-  }
+   }
   return 0;
 }
