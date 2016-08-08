@@ -40,8 +40,9 @@ int main( int argc, char** argv )
             }
 	    }
 	}
-		imshow("",gray_img);		 
-	*/
+		imshow("",gray_img);	*/	 
+      
+	       
  
   vector<Vec4i> lines;
     HoughLinesP( gray_img, lines, 1, CV_PI/180, 80, 30, 10 );
