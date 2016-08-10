@@ -47,8 +47,8 @@ int main( int argc, char** argv )
       if(lines.size()>=1){
 	i=0;
 	line( color_img, Point(lines[0][0], lines[0][1]),Point(lines[0][2], lines[0][3]), Scalar(255,0,0), 3, 8 );
-	circle (color_img,Point(color_img.cols/2,color_img.rows/2),50,Scalar(0,0,0),2,8);
-	circle (color_img,Point(color_img.cols/2,color_img.rows/2),100,Scalar(0,0,0),2,8);
+	//circle (color_img,Point(color_img.cols/2,color_img.rows/2),50,Scalar(0,0,0),2,8);
+	//circle (color_img,Point(color_img.cols/2,color_img.rows/2),100,Scalar(0,0,0),2,8);
 	double katamuki =(((double)-lines[0][3]+lines[0][1])/(lines[0][2]-lines[0][0]));
 	line (color_img, Point(color_img.cols/2,0),Point(color_img.cols/2,color_img.rows),Scalar(0,0,0),2,8);
 	line (color_img, Point(0,color_img.rows/2),Point(color_img.cols,color_img.rows/2),Scalar(0,0,0),2,8);
